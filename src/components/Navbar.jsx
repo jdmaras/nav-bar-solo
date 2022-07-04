@@ -3,16 +3,16 @@ import { MenuIcon, XIcon } from '@heroicons/react/outline'
 
 export const Navbar = () => {
     const [nav, setNav ] = useState(false)
-    // when you clikc the handle click, it sets to opposite of false that the state is set at
+    // when you click the handle click, it sets to opposite of false that the state is set at
     const handleClick = () => setNav(!nav)
   return (
 
-    <div className='w-screen h-[80px] z-10 bg-orange-300 drop-shadow-lg'>
-        {/* //this is the container */}
-        <div className='px-2 flex justify-between items-center w-full h-full'>
+    <div className='w-screen h-[100px] z-10 my-10 bg-orange-300 drop-shadow-lg'>
+        {/* this is the container px-10 is the padding on each side to be 10 */}
+        <div className='px-10 flex justify-between items-center w-full h-full'>
             <div className='flex items-center'>
                 {/* mr - margin right / sm:text 4xl - text will be 3xl and if they switch the screen sizes, it adjusts (mostly a mobile type thing) */}
-            <h1 className='text-3xl font-bold mr-4 sm:text-4xl'>REGINALD</h1>
+            <h1 className='text-3xl font-bold mr-3 sm:text-4xl'>REGINALD</h1>
             {/* anything below a medium screen will hide in the drop down */}
             <ul className='hidden md:flex'>
                 <li>HOME</li>
