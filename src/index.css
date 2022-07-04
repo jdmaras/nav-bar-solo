@@ -1,13 +1,16 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+@tailwind base;
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@tailwind components;
+
+@tailwind utilities;
+
+@layer base {
+  /* this gives a padding to all those in that top list of 4 */
+  li {
+    @apply p-4 
+  }
+  button {
+    @apply text-white border bg-orange-400 border-orange-400
+    hover:bg-transparent hover:text-orange-500 rounded-md
+  }
 }
