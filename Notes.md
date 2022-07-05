@@ -4,3 +4,5 @@
 - installed Tailwind CSS Intellisense Plugin
 - creating navbar, made the Navbar.jsx  and then start typing "rafc" and autofill
 - npm i @heroicons/react     copy/paste for the heroicons
+
+- https://i.imgur.com/UCmrBSS.png      - reggie home btn png

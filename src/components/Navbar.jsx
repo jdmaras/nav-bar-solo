@@ -9,16 +9,24 @@ export const Navbar = () => {
 
     <div className='w-screen h-[100px] z-10 my-10 bg-orange-300 drop-shadow-lg'>
         {/* this is the container px-10 is the padding on each side to be 10 */}
-        <div className='px-10 flex justify-between items-center w-full h-full'>
+        <div className='px-8 flex justify-between items-center w-full h-full'>
+        
             <div className='flex items-center'>
+                <div className='w-24 '>
+                    <img src="https://i.imgur.com/UCmrBSS.png" />
+                        <div class="opacity-0 hover:opacity-100 duration-300 absolute inset-1 items-center text-2xl p-12 text-black font-bold ">
+                        HOME
+                        </div>
+                </div>
+                
                 {/* mr - margin right / sm:text 4xl - text will be 3xl and if they switch the screen sizes, it adjusts (mostly a mobile type thing) */}
-            <h1 className='text-3xl font-bold mr-3 sm:text-4xl'>REGINALD</h1>
-            {/* anything below a medium screen will hide in the drop down */}
-            <ul className='hidden md:flex'>
-                <li>HOME</li>
-                <li>ABOUT</li>
-                <li>FAN CLUB</li>
-            </ul>
+                <h1 className='text-med font-bold mr-3 sm:text-4xl'>REGINALD</h1>
+                    {/* anything below a medium screen will hide in the drop down */}
+                <ul className='hidden md:flex'>
+                    <li>HOME</li>
+                    <li>ABOUT</li>
+                    <li>FAN CLUB</li>
+                </ul>
             </div>
             <div className='hidden md:flex pr-4'>
                 <button className='border-none bg-transparent text-black mr-4'>Sign In</button>
